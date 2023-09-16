@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if isAuthenticated
+    a(href="/account") Account
+
+  p This is some public content. Go crazy with it.

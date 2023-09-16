@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if user.picture
+    img(src=`${user.picture}`)
+
+    pre=JSON.stringify(user, null, 2)
